@@ -2,7 +2,7 @@
 function Navbar() {
     return (
         <nav>
-            <img src="../src/assets/airbnb-logo.png" alt="" />
+            <img className="nav--logo" src="../src/assets/airbnb-logo.png" />
         </nav>
     )
 }
