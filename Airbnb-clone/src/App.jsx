@@ -9,12 +9,14 @@ function App() {
   const cardElements = Data.map(cardData => {
     return (
       <Card
+        key={cardData.id}
         img={cardData.coverImg}
         rating={cardData.stats.rating}
         reviewCount={cardData.stats.reviewCount}
         location={cardData.location}
         title={cardData.title}
         price={cardData.price}
+        openSpots={cardData.openSpots}
       />
     )
   })
@@ -23,7 +25,10 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <section className="card-list">
       {cardElements}
+      </section>
+
     </>
   )
 }

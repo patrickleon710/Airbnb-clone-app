@@ -38,16 +38,37 @@ section {
   margin-bottom: 16px;
 }
 
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow: auto;
+}
+
 .card {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
   width: 250px;
+}
+
+.card--badge {
+  background: white;
+  border-radius: 2px;
+  font-weight: bold;
+  left: 30px;
+  padding: 5px 7px;
+  position: absolute;
+  top: 30px;
 }
 
 .card--image {
   border-radius: 5px;
-  width: 200px;
+  width: 100%;
 }
 
-.card--stats {
+.card .card--stats {
   display: flex;
   align-items: center;
 }
